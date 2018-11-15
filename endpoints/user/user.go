@@ -62,7 +62,7 @@ type FindResponse struct {
 }
 
 // MakeFindEndPoint make endpoint for find User
-func MakeFindEndPoint(s service.Service) endpoint.Endpoint {
+func MakeFindEndpoint(s service.Service) endpoint.Endpoint {
 	return func(ctx context.Context, request interface{}) (interface{}, error) {
 		var userFind domain.User
 		req := request.(FindRequest)

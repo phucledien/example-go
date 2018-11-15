@@ -8,7 +8,7 @@ import (
 	"github.com/phucledien/example-go/domain"
 )
 
-// pgService implmenter for User serivce in postgres
+// pgService implementer for User service in postgres
 type pgService struct {
 	db *gorm.DB
 }

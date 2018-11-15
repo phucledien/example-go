@@ -1,6 +1,6 @@
 package domain
 
-// User describe user in systenm
+// User describe user in system
 type User struct {
 	Model
 	Name  string `json:"name"`
