@@ -116,6 +116,7 @@ func MakeUpdateEndpoint(s service.Service) endpoint.Endpoint {
 			req      = request.(UpdateRequest)
 			category = domain.Category{
 				Model: domain.Model{ID: req.Category.ID},
+				Name:  req.Category.Name,
 			}
 		)
 

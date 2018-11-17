@@ -2,7 +2,6 @@ package category
 
 import (
 	"context"
-	"fmt"
 
 	"github.com/jinzhu/gorm"
 
@@ -23,9 +22,7 @@ func NewPGService(db *gorm.DB) Service {
 
 // Create implement Create for Category service
 func (s *pgService) Create(_ context.Context, p *domain.Category) error {
-	fmt.Println(p)
 	err := s.db.Create(p).Error
-	fmt.Println(p)
 	return err
 }
 
